@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de productos</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.c29735bf23539778e585025141298746?rik=0iCsNP5%2brVQKaQ&riu=http%3a%2f%2fwww.energetique-et-bien-etre.fr%2fmedias%2fecard%2fjardin0012.jpg&ehk=GoZOP33vqsAaQ4cTV8DurnEaWqxJhNL8n4i%2f%2bsOOnVA%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+section {
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+footer{
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.container {
+    width: 210px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto 40px;
+    border: 1px solid #CCC;
+    perspective: 1100px;
+}
+
+#carousel figure {
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10px;
+    top: 10px;
+    border: 2px solid rgba(   0, 0, 0, 0.8 );
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catalogo de productos</h1>
+        <nav>
+            <ul>
+                <li><a href="INDEX.html">Inicio</a></li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+    <section id="product-list">
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/R.773776529c94acc5e85aa2fcc347d3c2?rik=HTumQ%2bl8e9vdOw&pid=ImgRaw&r=0" alt="Producto 1">
+            <h2>Margarita del Cabo</h2>
+        
+            <p>Precio: $15.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://i.pinimg.com/originals/21/9c/8a/219c8adf4c57ac149908aef41eb95272.jpg" alt="Producto 2">
+            <h2>Balsamina</h2>
+      
+            <p>Precio: $10.00</p>
+           
+        </div>
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/R.6c1d453b47ed17720710181e93c4523e?rik=TP6a3UT31yCoCg&riu=http%3a%2f%2fonlinedeco.com.ar%2fwp-content%2fuploads%2f2018%2f01%2fAmarillita-web.jpg&ehk=3ry6T8xMdz2ldvMBs3Qu7aBfVVL%2bhJ5g6YWf8yN9%2bms%3d&risl=&pid=ImgRaw&r=0">
+            <h2>Bonsai de Flores Amarillas</h2>
+  
+            <p>Precio: $15.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://i.pinimg.com/originals/c1/ad/3f/c1ad3ffb422235615dfd99f07dedeb27.jpg" alt="Producto 2">
+            <h2>Palmera de Salon</h2>
+            
+            <p>Precio: $20.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://estag.fimagenes.com/img/3/Y/0/B/Y0B_900.jpg" alt="Producto 2">
+            <h2>Surfinias</h2>
+           
+            <p>Precio: $25.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/R.5b18f314bfca1e032695933335564181?rik=Ylu0tdGsycfcpg&riu=http%3a%2f%2festag.fimagenes.com%2fimg%2f1%2fY%2f0%2fD%2fY0D_900.jpg&ehk=N3UcK6XFYT4s87NDZCF%2fLnsppnUct%2bWV9KAmA9qDh1E%3d&risl=&pid=ImgRaw&r=0" alt="Producto 2">
+            <h2>Coleus</h2>
+       
+            <p>Precio: $20.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/OIP.zDxmdZlYv3_zhiQijRkbtwHaHa?rs=1&pid=ImgDetMain" alt="Producto 2">
+            <h2>Aloe Vera</h2>
+   
+            <p>Precio: $50.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/R.a7825c35976e918d28004a803ffa7690?rik=vdlNZt%2bxPjqmdA&riu=http%3a%2f%2festag.fimagenes.com%2fimg%2f1%2fX%2f6%2fh%2fX6h_900.jpg&ehk=eT66f2Sl3nJxsf3KTjJ9atqdlPPiqAHVw%2b0IFbBa2YQ%3d&risl=&pid=ImgRaw&r=0" alt="Producto 2">
+            <h2>Coleus</h2>
+      
+            <p>Precio: $30.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://i.pinimg.com/originals/61/50/2e/61502e25f6d45e86f4b223afcea40988.jpg" alt="Producto 2">
+            <h2>Areca</h2>
+      
+            <p>Precio: $20.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://www.hola.com/imagenes/decoracion/20210527190352/elegir-macetas-plantas-interior-exterior-mc/0-957-172/elegir-macetas-10-a.jpg" alt="Producto 2">
+            <h2>Kalanche Thyrsiflora</h2>
+       
+            <p>Precio: $15.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://th.bing.com/th/id/R.0faaa9f98a2ab564d61ae90cbcc8a194?rik=5sWg0PIYHHjFMw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-cDvudXGc9Zg%2fUtAbAPh_e_I%2fAAAAAAAAM24%2fja7S72vK61E%2fs1600%2fDise%C3%B1o%2bde%2bjardines%2ben%2bmacetas%2b3.%2bBlog%2bVida%2ba%2blo%2bVerde.jpg&ehk=pqoIoFSHQUSUZ3OHFOIoL8O3%2bjIeh0S8fAQ%2baVHnu04%3d&risl=&pid=ImgRaw&r=0" alt="Producto 2">
+            <h2>Viola x Wittrockiana</h2>
+         
+            <p>Precio: $10.00</p>
+           
+        </div>
+
+        <div class="product">
+            <img style="width: 300px; height: 300px;" src="https://i.pinimg.com/originals/20/a8/45/20a845ead30ecd552b78524bc80937b0.jpg" alt="Producto 2">
+            <h2>Tronco del Brasil</h2>
+         
+            <p>Precio: $20.00</p>
+           
+        </div>
+       
+    </section>
+
+    <footer>
+        <p>Materia: Programacion Web</p>
+        <p>Semestre: 2do </p>
+        <p>Estudiante: Carolina Ysabel Lotore Silva</p>
+    </footer>
+</body>
+</html>
